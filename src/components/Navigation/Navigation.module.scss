@@ -1,0 +1,65 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1368px;
+}
+
+.nav {
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal;
+  padding-top: 24px;
+  padding-right: 12px;
+
+
+  &__wrapper {
+    background-color: var(--nav-item);
+    width: 264px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+    color: var(--nav-item);
+    font-size: 18px;
+    font-weight: 400;
+    width: 264px;
+    padding: 12px 20px;
+    border-radius: 12px;
+
+    &:hover {
+      color: #ffffff; // Измените цвет текста для активного элемента
+      background: var(--nav-item);
+      width: 264px;
+    }
+  }
+
+  &__item__active {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+    border-radius: 12px;
+    color: #ffffff; // Измените цвет текста для активного элемента
+    background: var(--nav-item);
+    padding: 17.5px 20px;
+    width: 264px;
+
+    & .nav__item__icon {
+      fill: red
+    }
+  }
+
+  &__link {
+    max-width: 264px;
+    display: block;
+  }
+
+}
+
+.svg1 {
+  path {
+    fill: var(--nav-item-active);
+  }
+}

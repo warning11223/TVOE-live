@@ -1,0 +1,38 @@
+.adv {
+  height: 372px;
+  width: 264px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  color: var(--bg-dark);
+  padding: 12px;
+  margin-top: 24px;
+  line-height: normal;
+
+  &__link {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__span {
+    color: #848484;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  &__img {
+    padding: 119px 62px;
+    border-radius: 12px;
+    background: rgba(19, 19, 19, 0.42);
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 28px;
+    color: #000000;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
