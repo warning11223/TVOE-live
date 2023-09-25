@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +16,7 @@
   --bg-body: #F7F7F7;
   --nav-item: #262626;
   --nav-item-active: #FF6B00;
+  --light-gray: #848484;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,8 +27,13 @@
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--bg-body);
-  font-family: Inter, serif;
+  font-family: Roboto, serif;
 }

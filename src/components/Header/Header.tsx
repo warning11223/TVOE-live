@@ -12,7 +12,6 @@ export const Header = () => {
           <div className={s.header__wrapper}>
             <div className={s.header__item}>
               <Image
-                className={s.header__data}
                 src={"/img/header/data.svg"}
                 alt={"data"}
                 width={24}
@@ -26,8 +25,8 @@ export const Header = () => {
                 className={s.header__data}
                 src={"/img/header/dollar.svg"}
                 alt={"dollar"}
-                width={24}
-                height={24}
+                width={16}
+                height={16}
               />
               <p className={s.header__text}>96.34</p>
             </div>
@@ -60,15 +59,15 @@ export const Header = () => {
             className={s.header__search}
             src={"/img/header/search.svg"}
             alt={"search"}
-            width={16}
-            height={16}
+            width={36}
+            height={36}
           />
           <Image
             className={s.header__user}
             src={"/img/header/user.svg"}
             alt={"user"}
-            width={16}
-            height={16}
+            width={36}
+            height={36}
           />
         </div>
       </header>

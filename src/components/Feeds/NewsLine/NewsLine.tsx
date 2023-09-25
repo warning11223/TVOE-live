@@ -1,7 +1,8 @@
 import React from "react";
-import Image from "next/image";
 
 import s from "./NewsLine.module.scss";
+import { Ticker } from "./Ticker";
+import { NewsItem } from "./NewsItem";
 
 export const NewsLine = () => {
   return (
@@ -9,115 +10,38 @@ export const NewsLine = () => {
       <h2 className={s.feeds__title}>Лента</h2>
 
       <div className={s.feeds__items}>
-        <div className={s.feeds__item}>
-          <Image
-            src={"/img/feeds/fire.svg"}
-            alt={"fire"}
-            width={24}
-            height={24}
-          />
-          <div className={s.feeds__wrapper}>
-            <p className={s.feeds__text}>
-              Сотни россиян застряли в Египте из-за отмен рейсов.
-            </p>
-            <div className={s.feeds__container}>
-              <p className={s.feeds__time}>14:59</p>
-              <span className={s.feeds__icon}>Политика</span>
-            </div>
-          </div>
-        </div>
+        <NewsItem
+          desc={"Сотни россиян застряли в Египте из-за отмен рейсов."}
+          time={"14:59"}
+          spanTitle={"Политика"}
+        />
 
-        <div className={s.feeds__item}>
-          <Image
-            src={"/img/feeds/fire.svg"}
-            alt={"fire"}
-            width={24}
-            height={24}
-          />
-          <div className={s.feeds__wrapper}>
-            <p className={s.feeds__text}>
-              На Украине заявили о невосполнимых потерях после российских
-              ударов.
-            </p>
-            <div className={s.feeds__container}>
-              <p className={s.feeds__time}>14:59</p>
-              <span className={s.feeds__icon}>Политика</span>
-            </div>
-          </div>
-        </div>
+        <NewsItem
+          desc={
+            "На Украине заявили о невосполнимых потерях после российских ударов."
+          }
+          time={"14:59"}
+          spanTitle={"Политика"}
+        />
 
-        <div className={s.feeds__item}>
-          <Image
-            src={"/img/feeds/fire.svg"}
-            alt={"fire"}
-            width={24}
-            height={24}
-          />
-          <div className={s.feeds__wrapper}>
-            <p className={s.feeds__text}>
-              ЕС ввел санкции против силовиков из Крыма из-за дела в отношении
-              журналиста.
-            </p>
-            <div className={s.feeds__container}>
-              <p className={s.feeds__time}>14:59</p>
-              <span className={s.feeds__icon}>Политика</span>
-            </div>
-          </div>
-        </div>
+        <NewsItem
+          desc={
+            "ЕС ввел санкции против силовиков из Крыма из-за дела в отношении журналиста."
+          }
+          time={"14:59"}
+          spanTitle={"Политика"}
+        />
 
-        <div className={s.feeds__item}>
-          <Image
-            src={"/img/feeds/fire.svg"}
-            alt={"fire"}
-            width={24}
-            height={24}
-          />
-          <div className={s.feeds__wrapper}>
-            <p className={s.feeds__text}>
-              Резников назвал профессионалом нового министра обороны Украины
-              Умерова.
-            </p>
-            <div className={s.feeds__container}>
-              <p className={s.feeds__time}>14:59</p>
-              <span className={s.feeds__icon}>Политика</span>
-            </div>
-          </div>
-        </div>
+        <NewsItem
+          desc={
+            "Резников назвал профессионалом нового министра обороны Украины Умерова."
+          }
+          time={"14:59"}
+          spanTitle={"Политика"}
+        />
       </div>
 
-      <div className={s.ticker}>
-        <div className={s.ticker__item}>
-          <Image
-            className={s.ticker__img}
-            src={"/img/feeds/fire2.svg"}
-            alt={"fire2"}
-            width={24}
-            height={24}
-          />
-          <p className={s.ticker__text}>ОЧЕНЬ ВАЖНАЯ НОВОСТЬ</p>
-        </div>
-        <div className={s.ticker__item}>
-          <Image
-            className={s.ticker__img}
-            src={"/img/feeds/fire2.svg"}
-            alt={"fire2"}
-            width={24}
-            height={24}
-          />
-          <p className={s.ticker__text}>ОЧЕНЬ ВАЖНАЯ НОВОСТЬ</p>
-        </div>
-
-        <div className={s.ticker__item}>
-          <Image
-            className={s.ticker__img}
-            src={"/img/feeds/fire2.svg"}
-            alt={"fire2"}
-            width={24}
-            height={24}
-          />
-          <p className={s.ticker__text}>ОЧЕНЬ ВАЖНАЯ НОВОСТЬ</p>
-        </div>
-      </div>
+      <Ticker />
     </div>
   );
 };

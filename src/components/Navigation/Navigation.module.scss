@@ -32,6 +32,11 @@
       color: #ffffff; // Измените цвет текста для активного элемента
       background: var(--nav-item);
       width: 264px;
+
+      .svg {
+        background: var(--nav-item-active);
+        border-radius: 50%;
+      }
     }
   }
 
@@ -46,9 +51,11 @@
     padding: 17.5px 20px;
     width: 264px;
 
-    & .nav__item__icon {
-      fill: red
+    .svg {
+      background: var(--nav-item-active);
+      border-radius: 50%;
     }
+
   }
 
   &__link {
@@ -58,8 +65,3 @@
 
 }
 
-.svg1 {
-  path {
-    fill: var(--nav-item-active);
-  }
-}

@@ -39,8 +39,8 @@
   }
 
   &__data {
-    height: 24px;
-    width: 24px;
+    height: 16px;
+    width: 16px;
   }
 
   &__item {
@@ -53,9 +53,16 @@
   }
 
   &__search {
+    cursor: pointer;
+  }
 
-    border-radius: 50%;
-    padding: 10px;
+  &__user {
+    cursor: pointer;
+  }
+
+  &__right {
+    display: flex;
+    gap: 12px;
   }
 
 }

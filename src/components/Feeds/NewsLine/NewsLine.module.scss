@@ -71,6 +71,7 @@
   bottom: 0;
   right: 0;
   border-radius: 0px 0px 12px 12px;
+  overflow: hidden;
 
   &__item {
     display: flex;
@@ -78,11 +79,22 @@
     align-items: center;
     color: #FFFFFF;
     gap: 20px;
+
+    animation: tickerMove 15s linear infinite;
   }
 
   &__text {
     font-size: 16px;
     font-weight: 400;
     padding-right: 20px;
+  }
+}
+
+@keyframes tickerMove {
+  0% {
+    transform: translateX(310%); /* Начальная позиция за пределами видимой области */
+  }
+  100% {
+    transform: translateX(-310%); /* Конечная позиция за пределами видимой области */
   }
 }
